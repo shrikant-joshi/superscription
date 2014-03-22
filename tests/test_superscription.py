@@ -45,7 +45,7 @@ class TestSuperscription(unittest.TestCase):
         self.assertTrue(result)
 
         response = self.ss.response
-        # self.assertEqual(type(response).__name__, 'Response')
+        self.assertEqual(type(response).__name__, 'Response')
         self.assertEqual(response.status_code, 204)
 
     def test_list(self):
@@ -53,7 +53,7 @@ class TestSuperscription(unittest.TestCase):
         self.assertTrue(result)
 
         response = self.ss.response
-        # self.assertEqual(type(response).__name__, 'Response')
+        self.assertEqual(type(response).__name__, 'Response')
         self.assertEqual(response.status_code, 200)
         self.assertIsNotNone(response.text)
 
@@ -67,7 +67,7 @@ class TestSuperscription(unittest.TestCase):
         self.assertTrue(result)
 
         response = self.ss.response
-        # self.assertEqual(type(response).__name__, 'Response')
+        self.assertEqual(type(response).__name__, 'Response')
         self.assertEqual(response.status_code, 200)
         self.assertIsNotNone(response.text)
 
@@ -80,7 +80,7 @@ class TestSuperscription(unittest.TestCase):
         self.assertTrue(result)
 
         response = self.ss.response
-        # self.assertEqual(type(response).__name__, 'Response')
+        self.assertEqual(type(response).__name__, 'Response')
         self.assertEqual(response.status_code, 204)
 
     def tearDown(self):

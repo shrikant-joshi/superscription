@@ -195,10 +195,6 @@ class Superscription(object):
 
         Usage:
         >>> superscription = Superscription(username='demo', password='demo')
-        >>> superscription.subscribe('http://push-pub.appspot.com/feed', hub_secret='RandomHubSecret')
-        [...]
-        TypeError: subscribe() takes at least 3 arguments (3 given)
-
         >>> superscription.subscribe('http://push-pub.appspot.com/feed', 'http://my.domain.tld/callback', hub_secret='RandomHubSecret')
         True
         >>> print superscription.response
@@ -287,7 +283,7 @@ class Superscription(object):
 
         Usage:
         >>> superscription = Superscription(username='demo', password='demo')
-        >>> superscription.unsubscribe('http://push-pub.appspot.com/feed')
+        >>> superscription.unsubscribe('http://push-pub.appspot.com/feed', 'http://my.domain.tld/callback')
         True
         >>> print superscription.response
         <Response [204]>
