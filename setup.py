@@ -19,7 +19,7 @@ history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 setup(
     name='superscription',
-    version='0.1.0',
+    version='0.1.1',
     description='Superscriptions: A (super-)thin Python2.7 wrapper around the Superfeedr PubSubHubbub API.',
     long_description=readme + '\n\n' + history,
     author='Shrikant Joshi',
