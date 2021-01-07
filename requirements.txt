@@ -1,2 +1,2 @@
 wheel==0.22.0
-requests==2.2.1
+requests==2.20.0
